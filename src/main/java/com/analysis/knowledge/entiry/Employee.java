@@ -41,6 +41,10 @@ public class Employee {
 	@JsonProperty(value = "salary")
 	private Double salary;
 	
+	@Column(name = "employment_status")  
+	@JsonProperty(value = "employment_status")
+	private String employmentStatus;
+	
 	// Explicit getter and setter for id
     public int getId() {
         return id;
