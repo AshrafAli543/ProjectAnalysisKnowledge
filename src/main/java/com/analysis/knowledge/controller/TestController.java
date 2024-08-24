@@ -52,15 +52,14 @@ public class TestController {
 		
 	}
 	@PutMapping("/employee-update")
-	public Employee UpdateEmployee(@RequestBody Employee employee) {
+	public Employee updateEmployee(@RequestBody Employee employee) {
 		return employeeService.saveOrUpdateEmployee(employee);
 		
 	}
 	
 	@DeleteMapping("/employee-delete/{id}")
-	public String UpdateEmployee(@PathVariable int id) {
+	public String deleteEmployee(@PathVariable int id) {
 		return employeeService.deleteEmployee(id);
-		
 	}
 
 }

@@ -28,7 +28,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 		try {
 			logger.info("In FindAll Try","try");
 			employees = employeeRepository.findAll();
-			System.out.println(employees);
 		} catch (Exception e) {
 			logger.info("In Exception",e);
 			throw e;
